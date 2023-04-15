@@ -1,7 +1,9 @@
+import Header from "../header/header";
+
 const App = () => {
     return(
         <div>
-            console.log(228);
+            <Header/>
         </div>
     )
 }
