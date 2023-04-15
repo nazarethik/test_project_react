@@ -1,0 +1,21 @@
+.tabcontent {
+    max-width: 850px;
+    position: relative;
+}
+
+.tabcontent img {
+    width: 100%;
+}
+.tabcontent__descr {
+    position: absolute;
+    top: 300px;
+    right: -177px;
+    width: 550px;
+    min-height: 209px;
+    background: rgba(251, 254, 93, .8);
+    padding: 50px;
+    font-size: 24px;
+    font-weight: 300px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, .7);
+}
