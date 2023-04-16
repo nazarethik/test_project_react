@@ -52,3 +52,6 @@ a {
     transition: .3s all;
     outline: 0;
 }
+.btn:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .3);
+}
