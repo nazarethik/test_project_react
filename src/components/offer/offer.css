@@ -1,3 +1,7 @@
+.offer {
+    padding: 70px 0 100px 0;
+    position: relative;
+}
 .offer .container {
     display: flex;
     justify-content: space-between;

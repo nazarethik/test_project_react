@@ -5,8 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 1700px;
-  padding: 0 100px;
   box-sizing: border-box;
 }
 .container {

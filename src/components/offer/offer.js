@@ -46,7 +46,7 @@ const Offer = () => {
             slides.map((item, index) => {
                 if (currentIndex -1 <= -1) {
                     slides[currentIndex].isActive = false;
-                    slides[3].isActive = true;
+                    slides[slides.length - 1].isActive = true;
                 }  else{
                     item.isActive = (index === currentIndex - 1);
                 }
