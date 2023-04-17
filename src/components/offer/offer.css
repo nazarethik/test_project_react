@@ -84,3 +84,41 @@
     height: 100%;
     object-fit: cover;
 }
+@media (max-width: 500px) {
+    .offer{
+        padding: 0;
+
+    }
+    .title{
+        font-size: 20px;
+    }
+    .offer .container {
+        flex-direction: column;
+        max-width: 380px;
+    }
+    .offer__text {
+        width: 380px;
+    }
+    .offer__action {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .offer__advantages {
+        margin-top: 0;
+    }
+    .offer__advantages h2:first-child {
+        margin-top: 35px;
+        justify-content: center;
+    }
+    .offer__descr {
+        font-size: 20px;
+        text-align: justify;
+    }
+    .offer__advantages-text {
+        font-size: 20px;
+        text-align: justify;
+    }
+    .offer__slider {
+        width: 380px;
+    }
+}

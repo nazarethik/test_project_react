@@ -26,3 +26,15 @@
     outline: 0;
     margin: 0 20px 0 20px;
 }
+@media (max-width: 500px) {
+    .order__form {
+        flex-direction: column;
+
+    }
+    .order__input {
+        margin-bottom: 15px;
+    }
+    .order__form img {
+        display: none;
+    }
+}

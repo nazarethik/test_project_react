@@ -13,6 +13,7 @@
 }
 .header__links {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .header__link {
@@ -55,4 +56,45 @@ a {
 }
 .btn:hover {
     box-shadow: 0 4px 30px rgba(0, 0, 0, .3);
+}
+@media (max-width: 500px) {
+    .header{
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 25vh;
+        padding: 20px 15px;
+        background: rgba(249, 254, 126, 1);
+
+        transition: 0.6s all;
+    }
+    .header__active{
+        left: 17px;
+        top:20px;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+    .header__left-block {
+        flex-direction: column;
+    }
+    .header__links {
+        flex-direction: column;
+
+    }
+    .header__link{
+        padding-bottom:15px;
+        margin: 0;
+    }
+    .header__link:after {
+        background: none;
+    }
+    .header__right-block .btn{
+        width: 180px;
+        height: 50px;
+        font-size: 15px;
+    }
 }

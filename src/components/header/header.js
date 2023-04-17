@@ -5,10 +5,8 @@ const Header = () => {
     return (
         <div className='header'>
             <div className='header__left-block'>
-                <div className="header__logo">
-                    <img src={logo} alt="logo"/>
-                </div>
                 <nav className="header__links">
+                    <a className="header__link"><img src={logo} alt="logo"/></a>
                     <a href="#" className="header__link">Доставка питания</a>
                     <a href="#" className="header__link">Второй пункт</a>
                 </nav>

@@ -54,3 +54,8 @@
     font-size: 56px;
     font-weight: 700;
 }
+@media (max-width: 500px) {
+   .promotion{
+       display: none;
+   }
+}

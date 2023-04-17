@@ -1,4 +1,3 @@
-
 import './offer.css';
 import right from '../../img/icons/right.svg';
 import left from '../../img/icons/left.svg';
@@ -19,7 +18,7 @@ const Offer = () => {
             return item.isActive;
         });
     }
-    // console.log(slides[0].isActive);
+
     function getCurrentIndex() {
         return slides.indexOf(getCurrentSlide());
     }
@@ -27,24 +26,23 @@ const Offer = () => {
         const currentIndex  = getCurrentIndex();
         moveSlides(
             slides.map((item, index) => {
-                if (currentIndex + 1 >= slides.length) {
+                const isLast = currentIndex + 1 >= slides.length;
+                if (isLast) {
                    slides[currentIndex].isActive = false;
                    slides[0].isActive = true;
                 }  else{
                     item.isActive = (index === currentIndex + 1);
                 }
                 return item;
-
             })
         )
     }
-    const currentIndex  = getCurrentIndex();
-    console.log(currentIndex);
     function prevSlide() {
         const currentIndex  = getCurrentIndex();
         moveSlides(
             slides.map((item, index) => {
-                if (currentIndex -1 <= -1) {
+                const isFirst = currentIndex === 0;
+                if (isFirst) {
                     slides[currentIndex].isActive = false;
                     slides[slides.length - 1].isActive = true;
                 }  else{
@@ -90,7 +88,7 @@ const Offer = () => {
                         </div>
                         <span id="current">{getCurrentIndex() + 1}</span>
                         /
-                        <span id="total">04</span>
+                        <span id="total">{slides.length}</span>
                         <div className="offer__slider-next" onClick={nextSlide}>
                             <img src={right} alt="next"/>
                         </div>

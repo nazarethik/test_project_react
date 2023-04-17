@@ -19,20 +19,20 @@ const Order = () => {
             id: 1,
             name: "username",
             type: "text",
-            placeholder: "name",
+            placeholder: "Ім'я",
         },
         {
             id: 2,
             name: "title",
             type: "text",
-            placeholder: "title",
+            placeholder: "Заголовок",
 
         },
         {
             id: 3,
             name: "message",
             type: "text",
-            placeholder: "message",
+            placeholder: "Повідомлення",
         },
     ];
     const onChange = (e) => {
@@ -49,7 +49,7 @@ const Order = () => {
         const botToken = '5831857556:AAH8-W_XAsNw0fS_KQX2aS2yxrSTHE7c-xs';
         const chatId = '-980015360';
         const sendMessageUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
-        const payload = { chat_id: chatId, text: message };
+        const payload = { chat_id: chatId, text: message, parse_mode: 'HTML' };
         fetch(sendMessageUrl, {
             method: 'POST',
             headers: {
