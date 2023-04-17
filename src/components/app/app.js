@@ -5,6 +5,7 @@ import Offer from "../offer/offer";
 import Menu from "../menu/menu";
 import Order from "../order/order";
 import Promotion from "../promotion/promotion";
+import Footer from "../footer/footer";
 
 const App = () => {
     return(
@@ -18,6 +19,7 @@ const App = () => {
             <Order/>
             <Divider/>
             <Promotion/>
+            <Footer/>
         </div>
     )
 }
