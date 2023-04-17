@@ -4,6 +4,7 @@ import Divider from "../divider/divider";
 import Offer from "../offer/offer";
 import Menu from "../menu/menu";
 import Order from "../order/order";
+import Promotion from "../promotion/promotion";
 
 const App = () => {
     return(
@@ -15,6 +16,8 @@ const App = () => {
             <Divider/>
             <Menu/>
             <Order/>
+            <Divider/>
+            <Promotion/>
         </div>
     )
 }
