@@ -3,6 +3,7 @@ import Preview from "../preview/preview";
 import Divider from "../divider/divider";
 import Offer from "../offer/offer";
 import Menu from "../menu/menu";
+import Order from "../order/order";
 
 const App = () => {
     return(
@@ -13,6 +14,7 @@ const App = () => {
             <Offer/>
             <Divider/>
             <Menu/>
+            <Order/>
         </div>
     )
 }

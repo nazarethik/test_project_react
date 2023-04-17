@@ -5,10 +5,10 @@ import post from '../../img/tabs/post.jpg';
 import balanced from '../../img/tabs/burger.jpg';
 const Menu = (props) => {
     const [menus] = useState([
-        {img:vegan,price: '229',title:'Меню "Фитнес"', description:'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Для людей, которые интересуются спортом; активных и здоровых. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!'},
-        {img:elite,price: '332',title:'2', description:'fafa'},
-        {img:post,price: '43',title:'4', description:'awef'},
-        {img:balanced,price: '453' ,title:'Меню "Фитнес"', description:'awef'}
+        {img:vegan, price: '229',title:'Меню "Фитнес"', description:'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Для людей, которые интересуются спортом; активных и здоровых. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!'},
+        {img:elite, price: '332',title:'2', description:'fafa'},
+        {img:post, price: '43',title:'4', description:'awef'},
+        {img:balanced, price: '453' ,title:'Меню "Фитнес"', description:'awef'}
     ]);
 
     return(
